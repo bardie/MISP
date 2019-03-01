@@ -54,11 +54,11 @@ class EmailConfig {
 	public $smtp = array(
 		'transport'     => 'Smtp',
 		'from'          => array('site@localhost' => 'My Site'),
-		'host'          => "getenv('SMTP_HOST');",
+		'host'          => 'getenv("SMTP_HOST");',
 		'port'          => getenv('SMTP_PORT');,
 		'timeout'       => 30,
-		'username'      => "getenv('SMTP_USER');",
-		'password'      => "getenv('SMTP_PASS');",
+		'username'      => 'getenv("SMTP_USER");',
+		'password'      => 'getenv("SMTP_PASS");',
 		'client'        => null,
 		'log'           => false,
 		//'charset'       => 'utf-8',
@@ -66,7 +66,7 @@ class EmailConfig {
 	);
 
 	public $fast = array(
-		'from'          => "getenv('SMTP_USER');",
+		'from'          => 'getenv("SMTP_USER");',
 		'sender'        => null,
 		'to'            => null,
 		'cc'            => null,
@@ -85,11 +85,11 @@ class EmailConfig {
 		'attachments'   => null,
 		'emailFormat'   => null,
 		'transport'     => 'Smtp',
-		'host'          => "getenv('SMTP_HOST');",
+		'host'          => 'getenv("SMTP_HOST");',
 		'port'          => getenv('SMTP_PORT');,
 		'timeout'       => 30,
-		'username'      => "getenv('SMTP_USER');",
-		'password'      => "getenv('SMTP_PASS');",
+		'username'      => 'getenv("SMTP_USER");',
+		'password'      => 'getenv("SMTP_PASS");',
 		'client'        => null,
 		'log'           => true,
 		//'charset'       => 'utf-8',
